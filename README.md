@@ -62,6 +62,12 @@ Además, el proyecto fue desarrollado y simulado utilizando la plataforma **Tink
 
 ---
 
+## **Diagrama:**
+
+![Esquema del circuito](Recarga%20con%20Panel%20solar.PNG)
+
+---
+
 ## **Código**
 
 El código completo está disponible en el archivo [`Sistema_Solar_Arduino.ino`](./Sistema_Solar_Arduino.ino).
@@ -70,5 +76,5 @@ El código completo está disponible en el archivo [`Sistema_Solar_Arduino.ino`]
 
 ```cpp
 voltajeBateria = analogRead(pinVoltajeBateria) * (5.0 / 1023.0) * 2; 
-nivelBateria = map(voltajeBateria * 100, 300, 420, 0, 100);
+nivelBateria = map(voltajeBateria * 100, 300, 420, 0, 100); 
 ```
