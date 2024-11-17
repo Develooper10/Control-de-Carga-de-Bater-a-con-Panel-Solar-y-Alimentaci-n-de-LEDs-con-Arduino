@@ -4,16 +4,25 @@ Este proyecto implementa un sistema de monitoreo y control de carga para una bat
 
 ---
 
+## 📑 Tabla de Contenidos
+
+- [Características](#-características)
+- [Requisitos](#-requisitos)
+- [Cómo funciona](#-cómo-funciona)
+- [Código](#-código)
+- [Licencia](#-licencia)
+- [Demostración](#-demostración)
+- [Tareas Futuras](#-tareas-futuras)
+
+---
+
 ## 🌟 Características
 
-- **Lectura de voltajes**: Mide el voltaje del panel solar y de la batería usando pines analógicos.
-- **Cálculo del nivel de carga de la batería**: Convierte los valores de voltaje en un porcentaje de carga (0% a 100%).
-- **Control inteligente**:
-  - Detiene la carga cuando la batería está completa.
-  - Prioriza el uso del panel solar para alimentar el sistema cuando es posible.
-  - Cambia al uso de la batería cuando el panel no genera energía.
-- **Interfaz visual**: Muestra la información en tiempo real en un LCD de 16x2.
-- **Simulación previa**: Implementado en **TinkerCAD** para verificar el funcionamiento del circuito antes de armarlo.
+- **Lectura de voltajes:** Mide el voltaje del panel solar y de la batería usando pines analógicos.
+- **Cálculo del nivel de carga de la batería:** Convierte los valores de voltaje en un porcentaje de carga (0% a 100%).
+- **Control inteligente:** Detiene la carga cuando la batería está completa. Prioriza el uso del panel solar para alimentar el sistema cuando es posible.
+- **Interfaz visual:** Muestra la información en tiempo real en un LCD de 16x2.
+- **Simulación previa:** Implementado en **TinkerCAD** para verificar el funcionamiento del circuito antes de armarlo.
 
 ---
 
@@ -22,8 +31,8 @@ Este proyecto implementa un sistema de monitoreo y control de carga para una bat
 ### Hardware
 
 1. Arduino (cualquier modelo compatible, como Arduino Uno).
-2. **Pantalla LCD** con controlador I2C (dirección predeterminada: `0x27`).
-3. **Transistor TIP120** para controlar la carga de la batería.
+2. Pantalla LCD con controlador I2C (dirección predeterminada: `0x27`).
+3. Transistor TIP120 para controlar la carga de la batería.
 4. Resistencias:
    - 2 resistencias de **10 kΩ** (divisor de voltaje).
    - 1 resistencia de **100 Ω**.
@@ -33,17 +42,30 @@ Este proyecto implementa un sistema de monitoreo y control de carga para una bat
 7. Panel solar y batería recargable.
 8. Cables y protoboard.
 
-### Software
+---
 
-1. [Arduino IDE](https://www.arduino.cc/en/software) o [Visual Studio Code](https://code.visualstudio.com/) con extensión de Arduino.
-2. Librería **Adafruit_LiquidCrystal.h**.
-3. **TinkerCAD**.
+## 💡 Cómo Funciona
+
+1. **Inicialización:** El sistema configura los pines y muestra un mensaje inicial en el LCD.
+2. **Medición de voltajes:** Se mide el voltaje de la batería y el panel solar.
+3. **Cálculo del nivel de batería:** El voltaje de la batería se convierte en un porcentaje.
+4. **Control de carga:** El sistema prioriza el uso del panel solar o la batería según la situación.
+5. **Salida visual:** En el LCD se muestran los voltajes actuales y el porcentaje de batería.
 
 ---
 
-## 💡 Código
+## 🎥 Demostración
 
-Puedes encontrar el código completo en el archivo [`Sistema_Solar_Arduino.ino`](./Sistema_Solar_Arduino.ino).
+Aquí puedes ver cómo funciona el sistema solar con control de carga en acción:
+
+[![Demostración del proyecto](https://img.youtube.com/vi/tu_video_id/0.jpg)](https://www.youtube.com/watch?v=tu_video_id)
+
+---
+
+## 🚀 Tareas Futuras
+
+- Implementar la medición de la corriente de carga para una medición más precisa de la energía.
+- Agregar una interfaz de usuario web para controlar remotamente el sistema.
 
 ---
 
@@ -53,20 +75,6 @@ Este proyecto está bajo la licencia **MIT**. Consulta el archivo [LICENSE](./LI
 
 ---
 
-## 🎥 Demostración
+## 📸 Diagrama del Circuito
 
-Aquí puedes ver cómo funciona el sistema solar con control de carga en acción:
-
-![Demostración del sistema](https://www.youtube.com/watch?v=tu_video)
-
----
-
-## 📸 Diagrama
-
-![Esquema del circuito](images/Recarga%20con%20Panel%20solar.PNG)
-
----
-
-## 📜 Simulación en TinkerCAD
-
-Este proyecto fue simulado utilizando **TinkerCAD** para validar el funcionamiento del circuito antes de implementarlo físicamente.
+![Diagrama del Circuito](images/Recarga%20con%20Panel%20solar.PNG)
