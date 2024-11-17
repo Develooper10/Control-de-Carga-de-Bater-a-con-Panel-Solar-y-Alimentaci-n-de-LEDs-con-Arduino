@@ -1,27 +1,25 @@
-# Sistema Solar con Control de Carga
+# 🌞 Sistema Solar con Control de Carga
 
 Este proyecto implementa un sistema de monitoreo y control de carga para una batería alimentada por un panel solar. Está diseñado para gestionar eficientemente la energía generada, mostrando la información en una pantalla LCD con interfaz I2C.
 
-Además, el proyecto fue desarrollado y simulado utilizando la plataforma **TinkerCAD**, lo que permite experimentar y probar el diseño antes de implementarlo físicamente.
-
 ---
 
-## **Características**
+## 🌟 Características
 
-- **Lectura de voltajes:** Mide el voltaje del panel solar y de la batería usando pines analógicos.
-- **Cálculo del nivel de carga de la batería:** Convierte los valores de voltaje en un porcentaje de carga (0% a 100%).
-- **Control inteligente:**
+- **Lectura de voltajes**: Mide el voltaje del panel solar y de la batería usando pines analógicos.
+- **Cálculo del nivel de carga de la batería**: Convierte los valores de voltaje en un porcentaje de carga (0% a 100%).
+- **Control inteligente**:
   - Detiene la carga cuando la batería está completa.
   - Prioriza el uso del panel solar para alimentar el sistema cuando es posible.
   - Cambia al uso de la batería cuando el panel no genera energía.
-- **Interfaz visual:** Muestra la información en tiempo real en un LCD de 16x2.
-- **Simulación previa:** Implementado en **TinkerCAD** para verificar el funcionamiento del circuito antes de armarlo.
+- **Interfaz visual**: Muestra la información en tiempo real en un LCD de 16x2.
+- **Simulación previa**: Implementado en **TinkerCAD** para verificar el funcionamiento del circuito antes de armarlo.
 
 ---
 
-## **Requisitos**
+## 🔧 Requisitos
 
-### **Hardware**
+### Hardware
 
 1. Arduino (cualquier modelo compatible, como Arduino Uno).
 2. **Pantalla LCD** con controlador I2C (dirección predeterminada: `0x27`).
@@ -35,46 +33,40 @@ Además, el proyecto fue desarrollado y simulado utilizando la plataforma **Tink
 7. Panel solar y batería recargable.
 8. Cables y protoboard.
 
-### **Software**
+### Software
 
 1. [Arduino IDE](https://www.arduino.cc/en/software) o [Visual Studio Code](https://code.visualstudio.com/) con extensión de Arduino.
-2. Librería **Adafruit_LiquidCrystal.h**:
-   - Instalar desde el Administrador de Librerías del Arduino IDE o desde [Adafruit GitHub](https://github.com/adafruit/Adafruit_LiquidCrystal).
-3. **TinkerCAD**:
-   - Se utilizó TinkerCAD para simular el circuito y depurar el código de forma virtual.
+2. Librería **Adafruit_LiquidCrystal.h**.
+3. **TinkerCAD**.
 
 ---
 
-## **Cómo funciona**
+## 💡 Código
 
-1. **Inicialización:** El sistema configura los pines y muestra un mensaje inicial en el LCD.
-2. **Medición de voltajes:**
-   - La batería se mide con un divisor de voltaje para mantener los valores dentro del rango de 0-5V.
-   - El panel solar se mide directamente en el rango permitido.
-3. **Cálculo del nivel de batería:**
-   - Se asume un rango típico de baterías Li-ion (3.0V a 4.2V).
-   - La función `map()` convierte el voltaje en un porcentaje.
-4. **Control de carga y sistema:**
-   - Si la batería está completa, se detiene la carga y los LEDs se alimentan del panel.
-   - Si el panel no genera suficiente energía, los LEDs usan la batería.
-5. **Salida visual:**
-   - En el LCD se muestran los voltajes actuales y el porcentaje de batería.
+Puedes encontrar el código completo en el archivo [`Sistema_Solar_Arduino.ino`](./Sistema_Solar_Arduino.ino).
 
 ---
 
-## **Diagrama:**
+## 📄 Licencia
 
-![Esquema del circuito](Recarga%20con%20Panel%20solar.PNG)
+Este proyecto está bajo la licencia **MIT**. Consulta el archivo [LICENSE](./LICENSE) para más detalles.
 
 ---
 
-## **Código**
+## 🎥 Demostración
 
-El código completo está disponible en el archivo [`Sistema_Solar_Arduino.ino`](./Sistema_Solar_Arduino.ino).
+Aquí puedes ver cómo funciona el sistema solar con control de carga en acción:
 
-### **Fragmento importante:**
+![Demostración del sistema](https://www.youtube.com/watch?v=tu_video)
 
-```cpp
-voltajeBateria = analogRead(pinVoltajeBateria) * (5.0 / 1023.0) * 2; 
-nivelBateria = map(voltajeBateria * 100, 300, 420, 0, 100); 
-```
+---
+
+## 📸 Diagrama
+
+![Esquema del circuito](images/Recarga%20con%20Panel%20solar.PNG)
+
+---
+
+## 📜 Simulación en TinkerCAD
+
+Este proyecto fue simulado utilizando **TinkerCAD** para validar el funcionamiento del circuito antes de implementarlo físicamente.
