@@ -2,6 +2,8 @@
 
 Este proyecto implementa un sistema de monitoreo y control de carga para una batería alimentada por un panel solar. Está diseñado para gestionar eficientemente la energía generada, mostrando la información en una pantalla LCD con interfaz I2C.
 
+Además, el proyecto fue desarrollado y simulado utilizando la plataforma **TinkerCAD**, lo que permite experimentar y probar el diseño antes de implementarlo físicamente.
+
 ---
 
 ## **Características**
@@ -13,6 +15,7 @@ Este proyecto implementa un sistema de monitoreo y control de carga para una bat
   - Prioriza el uso del panel solar para alimentar el sistema cuando es posible.
   - Cambia al uso de la batería cuando el panel no genera energía.
 - **Interfaz visual:** Muestra la información en tiempo real en un LCD de 16x2.
+- **Simulación previa:** Implementado en **TinkerCAD** para verificar el funcionamiento del circuito antes de armarlo.
 
 ---
 
@@ -37,6 +40,8 @@ Este proyecto implementa un sistema de monitoreo y control de carga para una bat
 1. [Arduino IDE](https://www.arduino.cc/en/software) o [Visual Studio Code](https://code.visualstudio.com/) con extensión de Arduino.
 2. Librería **Adafruit_LiquidCrystal.h**:
    - Instalar desde el Administrador de Librerías del Arduino IDE o desde [Adafruit GitHub](https://github.com/adafruit/Adafruit_LiquidCrystal).
+3. **TinkerCAD**:
+   - Se utilizó TinkerCAD para simular el circuito y depurar el código de forma virtual.
 
 ---
 
