@@ -52,16 +52,11 @@ Este proyecto implementa un sistema de monitoreo y control de carga para una bat
 4. **Control de carga:** El sistema prioriza el uso del panel solar o la batería según la situación.
 5. **Salida visual:** En el LCD se muestran los voltajes actuales y el porcentaje de batería.
 
----
-
 ## 🎥 Demostración
 
 Aquí puedes ver cómo funciona el sistema solar con control de carga en acción:
 
-[![Demostración del proyecto](https://i.ytimg.com/vi/oTs-uA852\_Y/hqdefault.jpg)](https://youtu.be/oTs-uA852_Y)
-
-
----
+[![Demostración del proyecto](https://i.ytimg.com/vi/oTs-uA852_Y/hqdefault.jpg)](https://youtu.be/oTs-uA852_Y)
 
 ## 🚀 Tareas Futuras
 
