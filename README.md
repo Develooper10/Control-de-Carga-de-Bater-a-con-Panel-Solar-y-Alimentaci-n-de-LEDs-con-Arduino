@@ -58,7 +58,8 @@ Este proyecto implementa un sistema de monitoreo y control de carga para una bat
 
 Aquí puedes ver cómo funciona el sistema solar con control de carga en acción:
 
-[![Demostración del proyecto](https://img.youtube.com/vi/tu_video_id/0.jpg)](https://www.youtube.com/watch?v=tu_video_id)
+[![Demostración del proyecto](https://i.ytimg.com/vi/oTs-uA852\_Y/hqdefault.jpg)](https://youtu.be/oTs-uA852_Y)
+
 
 ---
 
