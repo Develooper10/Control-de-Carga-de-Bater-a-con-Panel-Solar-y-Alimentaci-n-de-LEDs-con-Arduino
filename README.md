@@ -67,7 +67,7 @@ Aquí puedes ver cómo funciona el sistema solar con control de carga en acción
 
 ## 📄 Licencia
 
-Este proyecto está bajo la licencia **MIT**. Consulta el archivo [LICENSE](./LICENSE) para más detalles.
+Este proyecto está bajo la licencia **MIT**. Consulta el archivo [LICENSE](./LICENSE.txt) para más detalles.
 
 ---
 
